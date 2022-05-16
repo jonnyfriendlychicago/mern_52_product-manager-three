@@ -15,6 +15,7 @@ app.use(cors());
 // all routes must be listed here: below the express.json/urlencoded and above the port/app.listen 
 // ! update name of route file below
 require('./routes/gizmo.routes')(app); 
+require('./routes/product.routes')(app); 
 
 const port = 8000; 
 app.listen(port, () => {
